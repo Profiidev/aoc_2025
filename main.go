@@ -1,7 +1,7 @@
 package main
 
 import (
-	day_01 "aoc_2025/internal"
+	"aoc_2025/internal"
 	"fmt"
 	"log"
 	"os"
@@ -32,7 +32,9 @@ func main() {
 
 	switch i {
 	case 1:
-		day_01.Day01(input)
+		internal.Day01(input)
+	case 2:
+		internal.Day02(input)
 	default:
 		log.Fatalf("Day %d not found", i)
 	}
