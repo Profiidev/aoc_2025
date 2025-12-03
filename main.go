@@ -35,6 +35,8 @@ func main() {
 		internal.Day01(input)
 	case 2:
 		internal.Day02(input)
+	case 3:
+		internal.Day03(input)
 	default:
 		log.Fatalf("Day %d not found", i)
 	}
