@@ -54,6 +54,8 @@ func Day07(input string) {
 		}
 	}
 
+	printGrid(&grid)
+
 	log.Printf("Result: %d", total)
 	log.Printf("Result 2: %d", result_2)
 }
