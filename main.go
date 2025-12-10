@@ -11,6 +11,7 @@ import (
 
 func main() {
 	args := os.Args[1:]
+	args = []string{"10"}
 
 	if len(args) != 1 {
 		log.Fatal("Please provide a day")
@@ -49,6 +50,8 @@ func main() {
 		internal.Day08(input)
 	case 9:
 		internal.Day09(input)
+	case 10:
+		internal.Day10(input)
 	default:
 		log.Fatalf("Day %d not found", i)
 	}
