@@ -29,27 +29,6 @@ func (d *data) conn(node string) []string {
 	return ret
 }
 
-func (d *data) print() {
-	line := "     "
-	for _, name := range d.nodes {
-		line += name + " "
-	}
-	log.Println(line)
-
-	for i, con := range d.matrix {
-		line := d.nodes[i] + ": "
-
-		for _, node := range con {
-			if node {
-				line += " x  "
-			} else {
-				line += "    "
-			}
-		}
-		log.Println(line)
-	}
-}
-
 func Day11(input string) {
 	machines := make(map[string][]string)
 	unique_map := make(map[string]bool)
